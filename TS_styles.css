@@ -1,0 +1,260 @@
+
+/*------Universal Formatting */
+body{
+    background: hwb(188 12% 58%);
+    color: white;
+    font-family:Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+  
+
+}
+
+h1{
+    background: hwb(188 12% 58%);
+    color: white;
+    text-align:center;
+
+}
+h2{
+    color: white;
+    text-align:center;
+}
+
+h3{
+    color: black;
+    margin: 0;
+   
+}
+
+h4{
+    color: white;
+    margin: 0;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
+   
+}
+
+button{
+    border-color: black;
+    border-radius: 8px;
+    background-color: gray;
+    color: white; 
+}
+header{
+    background: hwb(188 12% 58%);
+    color: white;
+    padding: 0;
+}
+
+section{
+    /*float:inline-end;*/
+    background: white;
+    border-radius: 10%;
+    width: 220px;
+    height: auto;
+    padding: 20px 20px 0px 60px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 10px;
+   
+
+}
+footer{
+    
+    background: black;
+    min-height: 20vh;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    color: white;
+    padding: 0;
+    margin-top: 100px;
+}
+
+div{
+    background:hwb(188 12% 58%);
+    margin: auto;
+    width: 80%; 
+    text-align: center;
+}
+
+
+/* ~~~~~~~~~ Header Links ~~~~~~~~~ */
+/* unvisited link */
+a:link {
+    color: red;
+  }
+  
+  /* visited link */
+  a:visited {
+    color: orange;
+  }
+  
+  /* mouse over link */
+  a:hover {
+    color: lightgreen;
+  }
+  
+  /* selected link */
+  a:active {
+    color: green;
+    text-decoration: underline;
+  }
+
+
+
+/*-------Home Page -------*/
+#navigation_container{
+    text-align: center; 
+ }
+
+.logo{
+    position: relative;
+    width: 10%;
+}
+
+.banner_container{
+    position: relative;
+    background-image: url('TCbanner5.png');
+    background-repeat: no-repeat;
+    background-position:center;
+    width: 100%;
+    height: 300px;
+    background-color:rgb(66, 63, 63);
+    font-size: 25px;
+    color: black;
+    text-align: center; 
+    margin-top: 0%;  
+
+}
+
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+li{
+    display: inline-block;
+    margin: 20px;
+}
+
+/*~~~~~~~~~~~~ Service List~~~~~~~~ */
+.service_list{      /*container*/
+    text-align: center; 
+}
+
+
+div#bc_i.service_item_img{
+    display: none;
+}
+
+#bc.service_item:hover{
+    color: red;
+}
+
+div#dc_i.service_item_img{
+    display: none; 
+}
+
+#dc.service_item:hover{
+    color: red;
+}
+
+div#mc_i.service_item_img{
+    display: none; 
+}
+
+#mc.service_item:hover{
+    color: red;
+}
+
+div#ao_i.service_item_img{
+    display: none; 
+}
+
+#ao.service_item:hover{
+    color: red;
+}
+section#bc.service_item:hover + div#bc_i.service_item_img{
+    display:block;
+}
+
+
+/* ----About Us Pages -----*/
+
+#aboutUs_container{
+    justify-content: center;
+    width: 100%;
+    height: auto; 
+    text-align: left;
+    margin-left: 3%;
+    align-items: center;
+
+}
+
+
+article{
+    position: relative;
+    width: 50%;
+    float: left;
+    -webkit-text-size-adjust: auto;
+    margin: 40px 10px 0px 10px;
+    padding: 10px;
+    }
+
+#team_container{
+    position: relative;
+    flex: auto;
+    float: left;
+    width: min-content;
+    min-width: 600px;
+    height: auto;
+    margin: 40px 40px 0px 10px;
+}
+
+#team{   
+    width: 100%; 
+    padding: 0px;
+
+}
+
+/* ----Locations Pages -----*/
+#locations_container{
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    width: 100%;
+    height: auto;
+    
+}
+
+#locations{
+    position:relative;
+    width: min-content;
+    min-width: 400px;
+    height: auto;
+    margin: 0px 0px 0px 10px;
+
+}
+
+#locationList_container table{
+    display: flex; 
+    justify-content: center;
+}
+
+#locationList_container table tr td{
+    width:150px;
+    padding:5px
+}
+
+
+
+
+/* ----Reviews Pages -----*/
+#reviews_container{
+    text-align: center;
+    width: 100%;
+    height: auto;
+}

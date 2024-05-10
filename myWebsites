@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+    <style>
+        body{
+            background: rgb(163, 211, 163);
+            color: black;
+            font-family:Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+
+        
+        }
+        h1{
+            background: rgb(71, 70, 70);
+            color: white;
+            text-align:center;
+        }
+        h2{
+            color: black;
+            text-align:center;
+        }
+        button{
+            border-color: black;
+            border-radius: 8px;
+            background-color: gray;
+            color: white; 
+        }
+        header{
+            background: rgb(71, 70, 70);
+            color: white;
+            padding: 20px 40px 10px 20px;
+        }
+
+        section{
+            background: white;
+            color: gray;
+            padding: 20px;
+            display: flex;
+            flex-direction: row;
+        }
+        footer{
+            background: rgb(71, 70, 70);
+            color: white;
+            padding: 10px 20px;
+        }
+
+        div{
+            background: red;
+            display: inline-block;
+            margin: auto;
+            width: 500px;
+            
+            
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style-type: none;
+            
+        }
+        li{
+            display: inline-block;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="Locations.html">Locations</a></li>
+                <li><a href="Contact.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Contact</h1>
+    </header>
+
+    <h1>TC Cleaning Service</h1>
+    <h2>We livin' the best life ever!</h2>
+        <p>I opened this on live server, but I can also see this on show preview</p>
+        <p>I am a paragraph with <strong>important</strong> text!</p>
+        <button>I am a button</button>
+
+        <ul>
+            <li>one</li>
+            <li>two</li>
+            <li>three</li>    
+        </ul>
+
+        <div>a</div>
+        <div>b</div>
+        <div>c</div>
+        <div>d</div>
+        
+
+        <header>header</header>
+        <section>tripple-section or two </section>
+        <section>lower-section</section>
+        <footer>footer</footer>
+</body>
+</html>
