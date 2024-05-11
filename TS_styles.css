@@ -52,10 +52,10 @@ section{
     border-radius: 10%;
     width: 220px;
     height: auto;
-    padding: 20px 20px 0px 60px;
+    padding: 20px 20px 0px 40px;
     display: flex;
     flex-direction: row;
-    margin-right: 10px;
+    margin: 5px;
    
 
 }
@@ -137,12 +137,13 @@ ul{
 
 li{
     display: inline-block;
-    margin: 20px;
+    margin: 10px;
 }
 
 /*~~~~~~~~~~~~ Service List~~~~~~~~ */
 .service_list{      /*container*/
     text-align: center; 
+    width: 100%;
 }
 
 
@@ -185,33 +186,24 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 /* ----About Us Pages -----*/
 
 #aboutUs_container{
-    justify-content: center;
     width: 100%;
     height: auto; 
-    text-align: left;
-    margin-left: 3%;
-    align-items: center;
-
+    margin-right: 5%;
+    justify-content: center;
 }
 
-
-article{
+#team_text{
     position: relative;
-    width: 50%;
-    float: left;
-    -webkit-text-size-adjust: auto;
-    margin: 40px 10px 0px 10px;
-    padding: 10px;
-    }
+    text-align: justify;
+    flex:auto;
+    max-width: 100%;
+}
+
 
 #team_container{
     position: relative;
     flex: auto;
-    float: left;
-    width: min-content;
-    min-width: 600px;
     height: auto;
-    margin: 40px 40px 0px 10px;
 }
 
 #team{   
@@ -250,11 +242,18 @@ article{
 }
 
 
-
-
 /* ----Reviews Pages -----*/
 #reviews_container{
-    text-align: center;
+    display:flex;
+    justify-content: center;
     width: 100%;
     height: auto;
+    margin: 0% 10% 0% 2%;
+}
+
+#reviews_img{
+    flex: auto;
+    min-width: 600px;
+    padding: 10px;
+
 }
