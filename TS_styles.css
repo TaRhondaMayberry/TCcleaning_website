@@ -244,16 +244,22 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 /* ----Reviews Pages -----*/
 #reviews_container{
-    display:flex;
+    display: flex;
     justify-content: center;
     width: 100%;
-    height: auto;
+    height: 65%;
     margin: 0% 10% 0% 2%;
 }
 
 #reviews_img{
     flex: auto;
-    min-width: 600px;
     padding: 10px;
 
+}
+
+
+#reviews_img,
+html,
+body {
+    height: 100%;
 }
