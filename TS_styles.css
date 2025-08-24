@@ -6,7 +6,6 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-  
 
 }
 
@@ -28,11 +27,12 @@ h3{
 }
 
 h4{
-    color: white;
+    background: white;
+    color: black;
     margin: 0;
-    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif   ;
-   
+    font-family:Arial, Helvetica, sans-serif;
 }
+
 
 button{
     border-color: black;
@@ -41,6 +41,7 @@ button{
     color: white; 
 }
 header{
+    /*border: 5px solid black; */
     background: hwb(188 12% 58%);
     color: white;
     padding: 0;
@@ -79,7 +80,13 @@ div{
 }
 
 
-/* ~~~~~~~~~ Header Links ~~~~~~~~~ */
+/* ~~~~~~~~~ Navigation/ Header ~~~~~~~~~ */
+#navigation_container{
+    /*border: 5px solid black; */
+    text-align: center;
+    width: 100%;
+ }
+
 /* unvisited link */
 a:link {
     color: red;
@@ -103,30 +110,84 @@ a:link {
 
 
 
-/*-------Home Page -------*/
-#navigation_container{
-    text-align: center; 
- }
 
 .logo{
-    position: relative;
-    width: 10%;
+    /*border: 5px solid black; */
+    position: absolute;
+    margin: 0;
+    width: auto;
+    height: auto;
 }
 
+#logo_img{
+    margin-top: 5px;
+    margin-left: 5px;
+    width: 180px;
+    height: 180px;
+}
+
+/*-------Home Page -------*/
 .banner_container{
     position: relative;
     background-image: url('TCbanner5.png');
     background-repeat: no-repeat;
     background-position:center;
     width: 100%;
-    height: 300px;
-    background-color:rgb(66, 63, 63);
+    height: 450px;
+    background-color:black;
     font-size: 25px;
     color: black;
     text-align: center; 
     margin-top: 0%;  
 
 }
+
+
+@keyframes get_a_quote{
+    50% {transform: rotateY(360deg);}
+    from {background-color: #aa6804;}
+    to {background-color: rgb(4, 102, 131);}
+}
+
+/*~~~~~ Commercial Service List ~~~~~~*/
+.commercial_service_list{      /*container*/
+    text-align: center; 
+    font-size: 14px;
+    width: 100%;
+}
+/*~~~~~~ Quote ~~~~~*/
+
+.quote{
+    text-align: center;  
+}
+
+
+
+.quote_button {
+    display: inline-block;
+    padding: 2px 15px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    /*background-color: #2b2d2d;*/
+    background-color: black;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 9px #3b3b3b;
+    animation-name: get_a_quote;    
+    animation-duration: 4s;
+  }
+
+  .quote_button:hover {background-color: #033a47}
+
+  .quote_button:active {
+    background-color: #06305c;
+    box-shadow: 0 2px #6666;
+    transform: translateY(4px);
+  }
 
 
 ul{
@@ -140,8 +201,9 @@ li{
     margin: 10px;
 }
 
+
 /*~~~~~~~~~~~~ Service List~~~~~~~~ */
-.service_list{      /*container*/
+.residential_service_list{      /*container*/
     text-align: center; 
     width: 100%;
 }
@@ -186,28 +248,39 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 /* ----About Us Pages -----*/
 
 #aboutUs_container{
-    width: 100%;
-    height: auto; 
-    margin-right: 5%;
+    background-color: white;
+    position: relative;
+    width: 80%;
+    /*border: 5px solid black; */
+    height: 59%; 
     justify-content: center;
+    
+
 }
 
 #team_text{
-    position: relative;
+    /*position: relative;*/
+    float: right;
+    flex: auto;
+    /*border: 5px solid black; */
     text-align: justify;
-    flex:auto;
-    max-width: 100%;
+    width: 60%;
+    max-width: 100%;    
+    margin: 10% 10% 0px 0px;    
+    
 }
 
 
 #team_container{
-    position: relative;
-    flex: auto;
+    float: left;
+    /*border: 5px solid black; */
+    width: 24%;
     height: auto;
 }
 
-#team{   
-    width: 100%; 
+
+#team{  
+    width: 100%;
     padding: 0px;
 
 }
@@ -243,6 +316,9 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 
 /* ----Reviews Pages -----*/
+
+
+
 #reviews_container{
     display: flex;
     justify-content: center;
@@ -253,13 +329,14 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 #reviews_img{
     flex: auto;
+    width: 65%;
     padding: 10px;
 
 }
-
 
 #reviews_img,
 html,
 body {
     height: 100%;
+    
 }
