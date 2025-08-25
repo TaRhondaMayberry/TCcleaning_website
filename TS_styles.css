@@ -110,7 +110,6 @@ a:link {
 
 
 
-
 .logo{
     /*border: 5px solid black; */
     position: absolute;
@@ -120,10 +119,10 @@ a:link {
 }
 
 #logo_img{
-    margin-top: 5px;
-    margin-left: 5px;
-    width: 180px;
-    height: 180px;
+    margin-top: 8%;
+    margin-left: 1%;
+    max-width: 20%;
+    height: auto;
 }
 
 /*-------Home Page -------*/
@@ -248,20 +247,27 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 /* ----About Us Pages -----*/
 
 #aboutUs_container{
-    background-color: white;
     position: relative;
-    width: 80%;
-    /*border: 5px solid black; */
-    height: 59%; 
+    display: flex;
+    flex: wrap;
+    background-color: white;
+    width: 100%;
+    border: 10px solid black;
+    height: auto; 
     justify-content: center;
+}
     
-
+@media(max-width: 125px) {
+   #team_text, #team_container {
+    flex: 100%;
+    margin-left: 0px;
+  }
 }
 
 #team_text{
-    /*position: relative;*/
     float: right;
     flex: auto;
+    background-color: white;
     /*border: 5px solid black; */
     text-align: justify;
     width: 60%;
@@ -272,7 +278,9 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 
 #team_container{
+    background-color: white;
     float: left;
+    margin-top: 0%;
     /*border: 5px solid black; */
     width: 24%;
     height: auto;
@@ -280,7 +288,7 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 
 #team{  
-    width: 100%;
+    max-width: 75%;
     padding: 0px;
 
 }
@@ -320,6 +328,7 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 
 #reviews_container{
+    background-color: white;
     display: flex;
     justify-content: center;
     width: 100%;
@@ -329,7 +338,7 @@ section#bc.service_item:hover + div#bc_i.service_item_img{
 
 #reviews_img{
     flex: auto;
-    width: 65%;
+    width: 100%;
     padding: 10px;
 
 }
